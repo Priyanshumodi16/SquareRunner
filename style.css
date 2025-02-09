@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+canvas {
+    background-color: black;
+    border: 3px solid white;
+    display: block;
+    margin: auto;
+}
+
+.mobile-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #0056b3;
+}
+
+/* Hide mobile controls on larger screens */
+@media (min-width: 768px) {
+    .mobile-controls {
+        display: none;
+    }
+}
